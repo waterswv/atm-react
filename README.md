@@ -1,5 +1,5 @@
 # ATM application
-We're revisiting and oldie but goodie, only this time using React! Here are your tasks:
+We're revisiting an oldie but goodie, only this time using React! Here are your tasks:
 
 ## `src/App.js`
 1. Pass a `name` property to each `Account` component, one for "Checking", the other for "Savings"
