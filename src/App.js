@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './ga.png';
 import './App.css';
 
 import Account from './Account';
@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div id="content">
         <div id="nav">
-          <div id="logo"><img src="ga.png" /></div>
+          <div id="logo"><img src={logo} /></div>
           <div id="title">Bank of GA</div>
         </div>
         <Account />
