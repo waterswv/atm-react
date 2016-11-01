@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './ga.png';
-import './App.css';
 
 import Account from './Account';
 
