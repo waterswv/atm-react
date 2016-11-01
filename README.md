@@ -12,6 +12,9 @@ We're revisiting an oldie but goodie, only this time using React! Here are your 
   - You should not be able to withdraw more than the current balance
 5. If the current balance is 0, you should add a class of `zero` to the `<div className="balance">` div
 
+## Bonus
+Add the [accounting](https://www.npmjs.com/package/accounting) package to format the balance.
+
 ## Hints
 - Remember to set a `ref` on the text field for targeting
 - The amount entered in the text field will initially be a string, so you'll need to convert that to a number
