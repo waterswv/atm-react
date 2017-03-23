@@ -1,5 +1,8 @@
 # ATM application
-We're revisiting an oldie but goodie, only this time using React! Here are your tasks:
+
+Let's make an ATM app! 
+
+Clone this repo, and run `npm install`. 
 
 ## `src/App.js`
 1. Pass a `name` property to each `Account` component, one for "Checking", the other for "Savings"
