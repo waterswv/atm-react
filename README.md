@@ -2,13 +2,33 @@
 
 Let's make an ATM app! 
 
-Clone this repo, and run `npm install`. 
+Clone this repo, and run `npm install`. To launch the app, run `npm 
 
-## `src/App.js`
-1. Pass a `name` property to each `Account` component, one for "Checking", the other for "Savings"
+### In `src/App.js`:
+1. Pass a `name` property to each `Account` component, one for "Checking", the other for "Savings".  These will be used and accessed as `props`for our component. **Remember**: Props are immutable, that is, once they are declared, they cannot be changed while the application is running.
 
-## `src/Account.js`
+```javascript
+    <div>
+      <Account name="Checking"/>
+      <Account name="Savings"/>
+    </div>
+```
+
+### In `src/Account.js`
 1. Use the property you set in `App.js` and add it to the `<h2>`
+
+```javascript
+    <div className="account">
+      //this.props.name is referring to the name property we assigned the App component in App.js
+      <h2>{this.props.name}</h2>
+      <div className="balance">$0</div>
+      <input type="text" placeholder="enter an amount" />
+      <input type="button" value="Deposit" />
+      <input type="button" value="Withdraw" />
+    </div>
+```
+Save your work.
+
 2. Add a `balance` property to `state` and set to 0 initially
 3. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
 4. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance
