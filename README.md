@@ -83,10 +83,26 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
     
     
     
-4. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance
-  - You should not be able to withdraw more than the current balance
+4. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance.  **You should not be able to withdraw more than the current balance**
 
-5. If the current balance is 0, you should add a class of `zero` to the `<div className="balance">` div
+5. If the current balance is 0, you should add a class of `zero` to the `<div className="balance">`.
+    <details>
+    <summary>Hint:</summary>
+        In the `Account.js` render method:
+    ```javascript
+      // set the default class to `balance` for the balanceClass.
+      let balanceClass = 'balance';
+      // if the balance is 0, then add the class zero to balanceClass
+      if (this.state.balance === 0) {
+        balanceClass += ' zero';
+      }
+    ```
+        In the `Account.js` render return, replace the class for the balance using string literals:
+    ```html
+          <div className={balanceClass}>TODO ENTER BALANCE HERE</div>
+    ```
+    
+    </details
 
 ## Bonus
 Add the [accounting](https://www.npmjs.com/package/accounting) package to format the balance.
