@@ -16,6 +16,8 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
 
 ### In `src/Account.js`
 1. Use the property you set in `App.js` and add it to the `<h2>`
+<details>
+<summary>Hint:</summary>
 
 ```javascript
     <div className="account">
@@ -27,10 +29,12 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
       <input type="button" value="Withdrawl" />
     </div>
 ```
+
+</details>
+
 Save your work. You should see two 'widgets' named Deposit and Withdrawl.  You're getting there!
 
 2. Add a `balance` property to `state` and set to 0 initially
-
 <details>
 <summary>Hint:</summary>
 
