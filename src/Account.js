@@ -8,8 +8,8 @@ export default class Account extends Component {
       balance: 0
     }
 
-    this._handleDepositClick = this._handleDepositClick.bind(this)
-    this._handleWithdrawalClick = this._handleWithdrawalClick.bind(this)
+    this._handleDepositClick = this.__explode__handleDepositClick.bind(this)
+    this._handleWithdrawalClick = this.__explode__andleWithdrawalClick.bind(this)
   }
 
   _handleDepositClick(e) {
