@@ -31,7 +31,8 @@ Save your work. You should see two 'widgets' named Deposit and Withdrawl.  You'r
 
 2. Add a `balance` property to `state` and set to 0 initially
 
-<summary>Hint:</summary><detail></detail>
+<details>
+<summary>Hint:</summary>
 
 ```javascript
     class Account extends Component {
@@ -43,6 +44,8 @@ Save your work. You should see two 'widgets' named Deposit and Withdrawl.  You'r
         }
     }
 ```
+
+</details>
 
 3. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
 4. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance
