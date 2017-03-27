@@ -42,7 +42,7 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
 
     </details>
 
-    Save your work. You should see two 'widgets' named Deposit and Withdrawl.  You're getting there!
+    Save your work. You should see two components named Deposit and Withdrawl.  You're getting there!
 
 3. Add a `balance` property to `state` and set to 0 initially
     <details>
