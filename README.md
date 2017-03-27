@@ -4,9 +4,6 @@ Let's make an ATM app! You will practice the dark art of manipulating components
 
 Clone this repo, and run `npm install`. To launch the app, run `npm 
 
-      - Remember to set a `ref` on the text field for targeting
-      - The amount entered in the text field will initially be a string, so you'll need to convert that to a number
-
 ### In `src/App.js`:
 1. Pass a `name` property to each `Account` component, one for "Checking", the other for "Savings".  These will be used and accessed as `props`for our component. **Remember**: Props are immutable, that is, once they are declared, they cannot be changed while the application is running.
 
@@ -71,8 +68,8 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
       handleDepositClick(e) {
         // It is good practice to still prevent default behavior
         e.preventDefault()
-        // set a local variable to the amount entered in the text box.  What does that + symbol do?
-        let amount = +this.refs.amount.value
+        // set a local variable to the amount entered in the text box.
+        let amount = this.refs.amount.value
         // set a local variable to the new balance based off of the original balance + amoun
         let newBalance = this.state.balance + amount;
         // set the balance to the newBalance using the setState method (necessary)
@@ -83,6 +80,9 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
         this.refs.amount.value = '';
       }
     ```
+    
+     PS - the amount entered in the text field will initially be a string, so you'll need to convert that to a number
+
 
     c. Don't forget to `bind` your click methods inside your constructor!
         
