@@ -7,12 +7,12 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
 ### In `src/App.js`:
 1. Pass a `name` property to each `Account` component, one for "Checking", the other for "Savings".  These will be used and accessed as `props`for our component. **Remember**: Props are immutable, that is, once they are declared, they cannot be changed while the application is running.
 
-```javascript
-    <div>
-      <Account name="Checking"/>
-      <Account name="Savings"/>
-    </div>
-```
+    ```javascript
+        <div>
+          <Account name="Checking"/>
+          <Account name="Savings"/>
+        </div>
+    ```
 
 ### In `src/Account.js`
 1. Use the property you set in `App.js` and add it to the `<h2>`
@@ -47,12 +47,42 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
               }
             }
         }
-    ```
+    ``` 
 
     </details>
 
 3. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
+        <details>
+    <summary>Hint:</summary>
+    1. Add a click handler in your input tags in our JSX return block:
+    
+    ```html
+      <input type="button" value="Deposit" onClick={this.handleDepositClick} />
+    ```
+    
+    2. Define a click handler method within the `Account` class
+    
+    ```javascript
+        handleDepositClick(e) {
+          // It is good practice to still prevent default behavior
+          e.preventDefault()
+          // set a local variable to the amount entered in the text box.  What does that + symbol do?
+          let amount = +this.refs.amount.value
+          // set a local variable to the new balance based off of the original balance + amount
+          let newBalance = this.state.balance + amount;
+          // set the balance to the newBalance using the setState method (necessary)
+          this.setState({
+            balance: newBalance
+          })
+          // empty out the text box in this component
+          this.refs.amount.value = '';
+  }
+    ```
+
+    </details>
+    
 4. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance
+
   - You should not be able to withdraw more than the current balance
 5. If the current balance is 0, you should add a class of `zero` to the `<div className="balance">` div
 
