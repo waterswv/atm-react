@@ -16,40 +16,40 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
 
 ### In `src/Account.js`
 1. Use the property you set in `App.js` and add it to the `<h2>`
-<details>
-<summary>Hint:</summary>
+    <details>
+    <summary>Hint:</summary>
 
-```javascript
-    <div className="account">
-      //this.props.name is referring to the name property we assigned the App component in App.js
-      <h2>{this.props.name}</h2>
-      <div className="balance">$0</div>
-      <input type="text" placeholder="enter an amount" />
-      <input type="button" value="Deposit" />
-      <input type="button" value="Withdrawl" />
-    </div>
-```
+    ```javascript
+        <div className="account">
+          //this.props.name is referring to the name property we assigned the App component in App.js
+          <h2>{this.props.name}</h2>
+          <div className="balance">$0</div>
+          <input type="text" placeholder="enter an amount" />
+          <input type="button" value="Deposit" />
+          <input type="button" value="Withdrawl" />
+        </div>
+    ```
 
-</details>
+    </details>
 
-Save your work. You should see two 'widgets' named Deposit and Withdrawl.  You're getting there!
+    Save your work. You should see two 'widgets' named Deposit and Withdrawl.  You're getting there!
 
 2. Add a `balance` property to `state` and set to 0 initially
-<details>
-<summary>Hint:</summary>
+    <details>
+    <summary>Hint:</summary>
 
-```javascript
-    class Account extends Component {
-        constructor(props){
-          super(props)
-          this.state = {
-            balance: 0
-          }
+    ```javascript
+        class Account extends Component {
+            constructor(props){
+              super(props)
+              this.state = {
+                balance: 0
+              }
+            }
         }
-    }
-```
+    ```
 
-</details>
+    </details>
 
 3. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
 4. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance
