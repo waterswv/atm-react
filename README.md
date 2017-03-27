@@ -31,17 +31,19 @@ Save your work. You should see two 'widgets' named Deposit and Withdrawl.  You'r
 
 2. Add a `balance` property to `state` and set to 0 initially
 
+<summary>Hint:</summary><detail></detail>
 
 ```javascript
-class Account extends Component {
-    constructor(props){
-      super(props)
-      this.state = {
-        balance: 0
-      }
+    class Account extends Component {
+        constructor(props){
+          super(props)
+          this.state = {
+            balance: 0
+          }
+        }
     }
-}
 ```
+
 3. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
 4. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance
   - You should not be able to withdraw more than the current balance
