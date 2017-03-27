@@ -88,7 +88,8 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
 5. If the current balance is 0, you should add a class of `zero` to the `<div className="balance">`.
     <details>
     <summary>Hint:</summary>
-        In the `Account.js` render method:
+        In the Account.js render method:
+    
     ```javascript
       // set the default class to `balance` for the balanceClass.
       let balanceClass = 'balance';
@@ -97,9 +98,10 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
         balanceClass += ' zero';
       }
     ```
-        In the `Account.js` render return, replace the class for the balance using string literals:
+        In the Account.js render return, replace the class for the balance using string literals:
+    
     ```html
-          <div className={balanceClass}>TODO ENTER BALANCE HERE</div>
+        <div className={balanceClass}>$0</div>
     ```
     
     </details
