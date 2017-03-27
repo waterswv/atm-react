@@ -124,10 +124,11 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
     ```
     
     </details>
+    
     ## Bonus ##
         Add the [accounting](https://www.npmjs.com/package/accounting) package to format the balance.
-
-   
+        
+    ## General Hints ##    
         Remember to set a `ref` on the text field for targeting
         The amount entered in the text field will initially be a string, so you'll need to convert that to a number
 
