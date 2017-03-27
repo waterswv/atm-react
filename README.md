@@ -9,15 +9,21 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
 ### In `src/App.js`:
 1. Pass a `name` property to each `Account` component, one for "Checking", the other for "Savings".  These will be used and accessed as `props`for our component. **Remember**: Props are immutable, that is, once they are declared, they cannot be changed while the application is running.
 
+    <details>
+    <summary>Hint:</summary>
+
     ```javascript
         <div>
           <Account name="Checking"/>
           <Account name="Savings"/>
         </div>
     ```
+    
+    </details
+    
 
 ### In `src/Account.js`
-1. Use the property you set in `App.js` and add it to the `<h2>`
+2. Use the property you set in `App.js` and add it to the `<h2>`
     <details>
     <summary>Hint:</summary>
 
@@ -38,7 +44,7 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
 
     Save your work. You should see two 'widgets' named Deposit and Withdrawl.  You're getting there!
 
-2. Add a `balance` property to `state` and set to 0 initially
+3. Add a `balance` property to `state` and set to 0 initially
     <details>
     <summary>Hint:</summary>
 
@@ -55,7 +61,7 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
 
     </details>
 
-3. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
+4. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
     <details>
     <summary>Hint:</summary>
     a. Add a click handler in your input tags in our JSX return block:
@@ -100,7 +106,7 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
     
     
     
-4. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance.  **You should not be able to withdraw more than the current balance**
+5. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance.  **You should not be able to withdraw more than the current balance**
 
     <details>
     <summary>Hint:</summary>
@@ -110,7 +116,7 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
     </details>
 
 
-5. If the current balance is 0, you should add a class of `zero` to the `<div className="balance">`.
+6. If the current balance is 0, you should add a class of `zero` to the `<div className="balance">`.
     <details>
     <summary>Hint:</summary>
         In the Account.js render method:
