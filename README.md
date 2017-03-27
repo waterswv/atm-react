@@ -79,6 +79,16 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
       }
     ```
 
+    c. Don't forget to `bind` your click methods inside your constructor!
+        
+    ```javascript  
+          
+        this.handleDepositClick = this.handleDepositClick.bind(this)
+        this.handleWithdrawlClick = this.handleWithdrawlClick.bind(this)  
+          
+     ```
+        
+
     </details>
     
     
@@ -117,18 +127,10 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
     ## Bonus ##
         Add the [accounting](https://www.npmjs.com/package/accounting) package to format the balance.
 
-    ## Hints ##
+   
         Remember to set a `ref` on the text field for targeting
         The amount entered in the text field will initially be a string, so you'll need to convert that to a number
-        Don't forget to `bind` your click methods!
-        <details><summary>Hint:</summary>
-          ```html  
-          
-          this.handleDepositClick = this.handleDepositClick.bind(this)
-          this.handleWithdrawlClick = this.handleWithdrawlClick.bind(this)  
-          
-          ```
-        </details>
+
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
