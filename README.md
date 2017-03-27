@@ -1,8 +1,11 @@
 # ATM application
 
-Let's make an ATM app! 
+Let's make an ATM app! You will practice the dark art of manipulating components in real time.  You will create two components of the same class which will work independently of eachother.  
 
 Clone this repo, and run `npm install`. To launch the app, run `npm 
+
+      - Remember to set a `ref` on the text field for targeting
+      - The amount entered in the text field will initially be a string, so you'll need to convert that to a number
 
 ### In `src/App.js`:
 1. Pass a `name` property to each `Account` component, one for "Checking", the other for "Savings".  These will be used and accessed as `props`for our component. **Remember**: Props are immutable, that is, once they are declared, they cannot be changed while the application is running.
@@ -29,6 +32,8 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
           <input type="button" value="Withdrawl" />
         </div>
     ```
+    
+    Remember to set a `ref` on the text field for targeting
 
     </details>
 
@@ -124,17 +129,6 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
     ```
     
     </details>
-    
-    <br>
-    
-    **Bonus**
-        - Add the [accounting](https://www.npmjs.com/package/accounting) package to format the balance.
+     
         
-    **General Hints**  
-        - Remember to set a `ref` on the text field for targeting
-        - The amount entered in the text field will initially be a string, so you'll need to convert that to a number
-
-
-## Licensing
-All content is licensed under a CC­BY­NC­SA 4.0 license.
-All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
+ 
