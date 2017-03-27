@@ -61,7 +61,7 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
 
     </details>
 
-<img src="https://media.giphy.com/media/cjAu63FxqHVhm/giphy.gif">
+<img src="https://media.giphy.com/media/26xBMuHu0ZFngH7Ta/giphy.gif">
 
 4. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
     <details>
