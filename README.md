@@ -24,12 +24,24 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
       <div className="balance">$0</div>
       <input type="text" placeholder="enter an amount" />
       <input type="button" value="Deposit" />
-      <input type="button" value="Withdraw" />
+      <input type="button" value="Withdrawl" />
     </div>
 ```
-Save your work.
+Save your work. You should see two 'widgets' named Deposit and Withdrawl.  You're getting there!
 
 2. Add a `balance` property to `state` and set to 0 initially
+
+
+```javascript
+class Account extends Component {
+    constructor(props){
+      super(props)
+      this.state = {
+        balance: 0
+      }
+    }
+}
+```
 3. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
 4. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance
   - You should not be able to withdraw more than the current balance
