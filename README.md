@@ -54,15 +54,15 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
 3. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
         <details>
     <summary>Hint:</summary>
-    1. Add a click handler in your input tags in our JSX return block:
+    a. Add a click handler in your input tags in our JSX return block:
     
     ```html
       <input type="button" value="Deposit" onClick={this.handleDepositClick} />
     ```
     
-    2. Define a click handler method within the `Account` class
+    b. Define a click handler method within the `Account` class
     
-    ```javascript
+```javascript
         handleDepositClick(e) {
           // It is good practice to still prevent default behavior
           e.preventDefault()
@@ -76,10 +76,12 @@ Clone this repo, and run `npm install`. To launch the app, run `npm
           })
           // empty out the text box in this component
           this.refs.amount.value = '';
-  }
-    ```
+        }
+```
 
     </details>
+    
+    
     
 4. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance
 
