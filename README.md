@@ -4,13 +4,14 @@ Let's make an ATM app! You will practice the dark art of manipulating components
 
 <img width="992" alt="atm" src="https://cloud.githubusercontent.com/assets/4304660/24376818/18c39a82-12f2-11e7-81e7-af618c22b3ed.png">
 
-Clone this repo, and run `npm install`. To launch the app, run `npm start`
+
+Clone this repo, and run `npm install` from inside it. The repo already includes a partial React app. To launch the app, run `npm start`.
 
 ### In `src/App.js`:
 1. Pass a `name` property to each `Account` component, one for "Checking", the other for "Savings".  These will be used and accessed as `props`for our component. **Remember**: Props are immutable, that is, once they are declared, they cannot be changed while the application is running.
 
     <details>
-    <summary>Hint:</summary>
+    <summary>Click for code:</summary>
 
     ```javascript
         <div>
@@ -23,9 +24,10 @@ Clone this repo, and run `npm install`. To launch the app, run `npm start`
 
 
 ### In `src/Account.js`
-2. Use the property you set in `App.js` and add it to the `<h2>`
+
+2. Use the property you set in `App.js` to add the name of the account to the `<h2>`.
     <details>
-    <summary>Hint:</summary>
+    <summary>Click for code:</summary>
 
     ```javascript
         <div className="account">
@@ -38,16 +40,14 @@ Clone this repo, and run `npm install`. To launch the app, run `npm start`
         </div>
     ```
 
-
-
     </details>
 
     Save your work. You should see two components named Checking and Savings.  You're getting there!
 
 
-3. Add a `balance` property to `state` and set to 0 initially
+3. Add a `balance` property to `state`, and set to 0 initially.
     <details>
-    <summary>Hint:</summary>
+    <summary>Click for code:</summary>
 
     ```javascript
         class Account extends Component {
@@ -64,6 +64,7 @@ Clone this repo, and run `npm install`. To launch the app, run `npm start`
 
 <img src="https://media.giphy.com/media/26xBMuHu0ZFngH7Ta/giphy.gif">
 
+
 4. Set a `ref` on the text field for targeting. This way we can access the data in the later when we want to know what values to add/subtract from our account.
 
     <details>
@@ -76,8 +77,9 @@ Clone this repo, and run `npm install`. To launch the app, run `npm start`
     </details>
 
 5. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
+
     <details>
-    <summary>Hint:</summary>
+    <summary>Click for code walkthrough:</summary>
     a. Add a click handler in your input tags in our JSX return block:
 
     ```html
@@ -114,7 +116,8 @@ Clone this repo, and run `npm install`. To launch the app, run `npm start`
 6. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance.  **You should not be able to withdraw more than the current balance**
 
     <details>
-    <summary>Hint:</summary>
+
+    <summary>Click for hint:</summary>
 
       Try to mirror the functionality of the Deposit function above.
 
@@ -123,7 +126,7 @@ Clone this repo, and run `npm install`. To launch the app, run `npm start`
 
 7. If the current balance is 0, you should add a class of `zero` to the `<div className="balance">`. You can complete these computations in the render method, but before the JSX portion is returned.
     <details>
-    <summary>Hint:</summary>
+    <summary>Click for code walkthrough:</summary>
         In the Account.js render method:
 
     ```javascript
