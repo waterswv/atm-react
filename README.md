@@ -71,7 +71,7 @@ Clone this repo, and run `npm install` from inside it. The repo already includes
     <summary>Hint:</summary>
 
     ```html
-      <input type="text" placeholder="enter an amount" ref={(input) => this.inputBox = input;} />
+      <input type="text" placeholder="enter an amount" ref={(input) => this.inputBox = input} />
     ```
 
     </details>
