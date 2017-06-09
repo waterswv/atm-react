@@ -65,13 +65,13 @@ Clone this repo, and run `npm install` from inside it. The repo already includes
 <img src="https://media.giphy.com/media/26xBMuHu0ZFngH7Ta/giphy.gif">
 
 
-4. Set a `ref` on the text field for targeting. This way we can access the data in the later when we want to know what values to add/subtract from our account.
+4. Set a `ref` on the text field, so that we save a reference to that text field in our object. This way we can access the data in the field later when we want to know what values to add/subtract from our account.
 
     <details>
     <summary>Hint:</summary>
 
     ```html
-      <input type="text" placeholder="enter an amount" ref="amount" />
+      <input type="text" placeholder="enter an amount" ref={(input) => this.inputBox = input;} />
     ```
 
     </details>
@@ -91,9 +91,9 @@ Clone this repo, and run `npm install` from inside it. The repo already includes
     ```javascript
       handleDepositClick(e) {
         // It is good practice to still prevent default behavior
-        e.preventDefault()
+        e.preventDefault();
         // set a local variable to the amount entered in the text box.
-        let amount = this.refs.amount.value
+        let amount = this.inputBox.value;
         // set a local variable to the new balance based off of the original balance + amount
         let newBalance = this.state.balance + amount;
         // set the balance to the newBalance using the setState method (necessary)
@@ -101,7 +101,7 @@ Clone this repo, and run `npm install` from inside it. The repo already includes
           balance: newBalance
         })
         // empty out the text box in this component
-        this.refs.amount.value = '';
+        this.inputBox.value = '';
       }
     ```
 
